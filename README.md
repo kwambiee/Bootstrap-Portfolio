@@ -2,19 +2,19 @@
 
 # Portfolio
 
-> This a personal portfolio project designed using figma template for good user interface design
+> This a personal portfolio project designed using bootstrap framework.
 
 # WORKFLOW SCREENSHOT
-![screenshot](mobile.png)
 
 ## Built With
+
 - HTML
 - CSS
-- Figma Tempalate
+- Bootstrap Framework
+
 ## Live Demo (if available)
 
-[Live Demo Link](https://github.com/kwambiee/Bootstrap-Portfolio.git
-)
+[Live Demo Link](https://github.com/kwambiee/Bootstrap-Portfolio.git)
 
 ## Getting Started
 
@@ -24,7 +24,6 @@ To get a local copy up and running follow these simple example steps.
 
 - Web Browser
 - Code Editor
-- Figma Template
 - Prior knowledge of CSS, HTML, GIT, GITHUB and Linters.
 
 ### Setup
@@ -41,7 +40,8 @@ Open the index file of the project in the browser to see the project
 ## Authors
 
 👤 **Tamara Siansanda**
-   **kwambiee** 
+**kwambiee**
+
 - GitHub: [@SiansandaTamara](https://github.com/SiansandaTamara)
 - Twitter: [@twitterhandle](https://twitter.com/TamaraSiansanda)
 
