@@ -1,0 +1,20 @@
+$size: 40px;
+
+#image {
+  width: 100px;
+  height: 100px;
+}
+#Social-image {
+  width: $size;
+  height: 30px;
+}
+
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace;
+
+body {
+  font-family: $font-family-sans-serif;
+}
