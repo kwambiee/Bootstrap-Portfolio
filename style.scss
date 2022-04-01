@@ -18,4 +18,43 @@ $font-family-monospace: sfmono-regular, menlo, monaco, consolas,
 
 body {
   font-family: $font-family-sans-serif;
+  background: silver;
+}
+$color: (black);
+$orange: #ffa600;
+$blue: #82d2e5;
+$green: #c1d72e;
+
+header {
+  background: $color;
+}
+
+.homepage {
+  background: $color;
+}
+$gradient: -webkit-linear-gradient(#f6ea41, #f048c6, #6dd5ed);
+
+h1 {
+  font-size: 72px;
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+.portflio li::before {
+  content: "• ";
+  color: black;
+}
+
+#connect li::before {
+  content: "• ";
+  color: white;
+}
+
+#firstrow {
+  background: silver;
 }

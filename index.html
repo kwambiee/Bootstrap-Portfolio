@@ -10,29 +10,9 @@
         <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
-    <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Built Portfolio using bootstrap</h4>
-                </div>
-                <div class="modal-body">
-                    <p>This portfolio was built using bootstrap.Bootstrap scroll, buttons, card, badge and forms knowledge was used to design.</p>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <header class="container-fluid">
-        <nav id="scrolling-bar" class="navbar navbar-expand-lg navbar-dark bg-secondary px-3 d-flex justify-content-between">
+    
+    <header class="container-fluid ">
+        <nav id="scrolling-bar" class="navbar fixed-top navbar-expand-lg bg-dark navbar-dark px-3 d-flex justify-content-between border border-success mb-5">
             <div>
                 <img class=" navbar-brand img.thumbnail rounded-circle" src="./logo.png" id="image" alt="company image">
             </div>
@@ -49,53 +29,62 @@
                 </ul>
         </nav>
     </header>
-    <main class="container bg-light">
-        <div class="my-5">
-                <h1 class="text-center text-success fs-1 fw-bold">I'm Kwamboka.<br> Front-end and UI Developer!</h1>
-                <p class="mx-3 py-3 fs-3"> I create UX rich performant websites and elegant web applications. If you like what you see and have a project you need coded, do not hestiate to contact me.
+    <main class="container-fluid">
+        <div class="row row-lg my-5 pt-5 homepage ">
+            <div class="col col-lg-6">
+                <h1 class="text-center fs-1 fw-bold mt-5 pt-5">Hello!I am Kwamboka</h1>
+                <p class="fs-3 fw-bold text-center text-primary ">Front-end and<br> UI Developer!</p> 
+                <p class="mx-3 py-3 fs-3 text-light text-center"> I create UX rich performant websites and elegant web applications. If you like what you see
+                    and have a project you need coded, do not hestiate to contact me.
                 </p>
-                <h3 class="px-3 fs-4">LET'S CONNECT</h3>   
-                <ul class="d-flex list-unstyled px-3 align-items-center">
-                    <li>
+            </div>
+            <div class="col col-lg-4" id="connect">
+                <h3 class="px-3 fs-4 text-success text-end mt-5 pt-5">LET'S CONNECT</h3>
+                <ul class="d-block px-3 float-end me-5">
+                    <li class="my-4">
                         <a href="#">
                             <img class="rounded px-2 Social-image" src="./twitter.png" alt="twitter">
                         </a>
                     </li>
-                    <li class="linkedin">
+                    <li class="linkedin my-4">
                         <a href="#">
                             <img class="rounded px-2 Social-image" src="./Linkedin.png" alt="linkedin">
                         </a>
                     </li>
-                    <li>
+                    <li class="my-4">
                         <a href="#">
                             <img class="rounded px-2 Social-image" src="./Mail.png" alt="Mail">
                         </a>
                     </li>
-                    <li>
+                    <li class="my-4 ">
                         <a href="#">
                             <img class="rounded px-2 Social-image" src="./github.png" alt="github">
                         </a>
                     </li>
-                    <li>
+                    <li class="my-4">
                         <a href="#">
                             <img class="rounded px-1 Social-image" src="./chill.png" alt="AngelList eplatform">
                         </a>
                     </li>
                 </ul>
-        </div>
-        <div class="my-5 py-5 scrollspy-example" data-bs-spy="scroll" data-bs-target="#scrolling-bar" data-bs-offset="0" tabindex="0"></div>
-            <div class="row gy-5">
+            </div>    
+                
+
+        <div class="py-5 scrollspy-example" data-bs-spy="scroll" data-bs-target="#scrolling-bar" data-bs-offset="0" tabindex="0"></div>
+        <div class="container-fluid" id="firstrow">
+            <div class="row gy-5 col-sm my-5" >
                 <div class="col-6">
                     <img class="img-fluid" id="syntax-image" src="./code-image.jpg" alt="css syntax">
                 </div>
-                <div class="col-6 ps-4">
+                <div class="col-6 ps-4 portflio">
                     <h2 class="fw-bold fs-2" id="portfolio">Portfolio</h2>
                     <ul class="d-flex ps-0 d-flex align-items-baseline">
                         <li class="list-unstyled pe-1 me-4 fs-5">APIs</li>
                         <li class="pe-1 me-4 fs-6">Fullstack Developer</li>
-                        <li class="pe-1 me-4 fs-6" >2022</li>
+                        <li class="pe-1 me-4 fs-6">2022</li>
                     </ul>
-                    <p class="font-monospace fs-5">As a Fullstack web developer I can build database backed APIs and web applications. Feel free to have a look at my latest projects.</p>
+                    <p class="font-monospace fs-5">As a Fullstack web developer I can build database backed APIs and web
+                        applications. Feel free to have a look at my latest projects.</p>
                     <div>
                         <button type="button" class="btn btn-primary me-3">HTML</button>
                         <button type="button" class="btn btn-success me-3">CSS</button>
@@ -103,52 +92,103 @@
                         <button type="button" class="btn btn-dark me-3">Javascript</button>
                     </div>
                     <div class="d-flex mt-2 justify-content-start">
-                        <button type="button" class="btn btn-primary mt-5">See Project</button>
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">See Project</button>
+                        <div id="myModal" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Built Portfolio using bootstrap</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>This portfolio was built using bootstrap.Bootstrap scroll, buttons, card, badge and forms knowledge was used to design.</p>
+                                        <a href="#portfolio">Portfolio</a>
+                                        <a href="#about">About</a>
+                                        <a href="#contact">Contact</a>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
+                    </div>
+                    
                 </div>
             </div>
-            <div class="row gy-5 mt-5 pt-5">
-                <div class="col-4 card">
-                    <img src="./developer.jpg" class="developer image" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Languages</h5>
-                        <p class="card-text"> Sample of the languages I work with frequently as a Front-End Developer.</p>
-                        <a href="#" class="btn btn-primary">See sample projects</a>
+        </div>
+            
+            <div class="cardss bg-secondary">
+                <div class="row my-5 d-flex gx-1">
+                    <div class="col col-lg-6 d-flex">
+                        <div class="col-5 card ms-3"> 
+                            <img src="./developer.jpg" class="developer image" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Languages</h5>
+                                    <p class="card-text"> Sample of the languages I work with frequently as a Front-End Developer.</p>
+                                    <a href="#" class="btn btn-primary">See sample projects</a>
+                                </div>
+                        </div>
+                        <div class="col-5 card ms-3">
+                            <img src="./developer.jpg" class="developer image" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Languages</h5>
+                                    <p class="card-text"> Sample of the languages I work with frequently as a Front-End Developer.</p>
+                                    <a href="#" class="btn btn-primary">See sample projects</a>
+                                </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-6 ms-5">
-                    <h2 class="text-center fs-1 fw-bold" id="about">About Myself</h2>
-                    <p class="text-center fs-5">I am a full stack web developer and UI/UX enthusiast.<br> Take a look at my skills and experience.</p>
-                    <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-success mt-3 ps-2">See Resume</button>
+                    <div class="col col-lg-6">
+                        <h2 class="text-center fs-1 fw-bolder" id="about">About Myself</h2>
+                        <p class="text-center fs-3">I am a full stack web developer and UI/UX enthusiast.<br> Take a look at my skills and
+                            experience.</p>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn-lg btn-success mt-3 ps-2">See Resume</button>
+                        </div>
+                        <div class="mt-3 d-flex">
+                            <ul class="d-flex flex-column">
+                                <li class="fs-4 fw-bold my-4">Languages</li>
+                                <li class="badge bg-info text-dark fs-5 my-3">Javascript</li>  
+                                <li class="badge bg-danger fs-5 my-3">CSS</li>
+                                <li class="badge bg-success fs-5 my-3">HTML</li>
+                            </ul>
+                            <ul class="d-flex flex-column">
+                                <li class="fs-4 fw-bold my-4 ms-2">Tools</li>
+                                <li class="badge bg-info text-dark fs-5 my-3">github</li>
+                                <li class="badge bg-danger fs-5 my-3">Gitlab</li>
+                                <li class="badge bg-success fs-5 my-3">Vscode Editor</li>
+                            </ul>
+                            <ul class="d-flex flex-column">
+                                <li class="fs-4 fw-bold my-4">Skills</li>
+                                <li class="badge bg-info text-dark fs-5 my-3">Bootstrap</li>
+                                <li class="badge bg-danger fs-5 my-3">Git</li>
+                                <li class="badge bg-success fs-5 my-3">Html</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="mt-3">
-                        <h2>Languages</h2>
-                        <p class="badge bg-info text-dark fs-4 d-flex">Javascript</p>
-                        <p class="badge bg-danger d-flex fs-4">CSS</p>
-                        <p class="badge bg-success d-flex fs-4">HTML</p>
-                    </div>
+                    
                 </div>
             </div>
+        </div>
     </main>
     <footer class="container bg-success my-3">
         <div class="d-flex mt-5 py-5 justify-content-center">
             <form action="https://formspree.io/f/xjvlodwe" method="post">
                 <div class="mb-3">
-                    <p id=contact>Contact Me!</p>
+                    <p id=contact class="fw-bolder fs-2">Contact Me!</p>
                     <div class="mb-3">
-                        <label for="username" class="form-label">UserName</label>
+                        <label for="username" class="form-label fw-bold fs-5">UserName</label>
                         <input type="text" class="form-control" id="username">
                     </div>
-                    <label for="Email" class="form-label">Email address</label>
+                    <label for="Email" class="form-label fw-bold fs-5">Email address</label>
                     <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text text-danger">We'll never share your email with anyone else.</div>
-                    <label class="form-label">Message</label>
+                    <div id="emailHelp" class="form-text text-danger fw-bold fs-5">We'll never share your email with anyone else.</div>
+                    <label class="form-label fw-bold fs-5">Message</label>
                     <textarea class="form-control" aria-label="With textarea"></textarea>
 
                 </div>
                 
-                <button type="submit" class="btn btn-primary">Get in Touch</button>
+                <button type="submit" class="btn-lg btn-primary">Get in Touch</button>
             </form>
         </div>
     </footer>

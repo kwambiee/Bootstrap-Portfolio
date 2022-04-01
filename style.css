@@ -1,19 +1,49 @@
-/*# sourceMappingURL=style.css.map */
-
-/* stylelint-disable-next-line */
-
-body {
-  font-family: system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue",
-    arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
+@charset "UTF-8";
 #image {
   width: 100px;
   height: 100px;
 }
 
-#Social-image {
+.Social-image {
   width: 40px;
   height: 30px;
 }
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background: silver;
+}
+
+header {
+  background: black;
+}
+
+.homepage {
+  background: black;
+}
+
+h1 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#f6ea41, #f048c6, #6dd5ed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+.portflio li::before {
+  content: "• ";
+  color: black;
+}
+
+#connect li::before {
+  content: "• ";
+  color: white;
+}
+
+#firstrow {
+  background: silver;
+}
+/*# sourceMappingURL=style.css.map */
