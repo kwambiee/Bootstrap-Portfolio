@@ -1,0 +1,61 @@
+$size: 40px;
+$col-black: (black);
+$orange: #ffa600;
+$blue: #82d2e5;
+$green: #c1d72e;
+
+#image {
+  width: 100px;
+  height: 100px;
+}
+
+.Social-image {
+  width: $size;
+  height: 30px;
+}
+
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", roboto,
+  "Helvetica Neue", arial, "Noto Sans", "Liberation Sans", sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace: sfmono-regular, menlo, monaco, consolas,
+  "Liberation Mono", "Courier New", monospace;
+
+body {
+  font-family: $font-family-sans-serif;
+  background: $col-black;
+}
+
+header {
+  background: $col-black;
+}
+
+.hopage {
+  background: $color;
+}
+
+$gradient: -webkit-linear-gradient(#f6ea41, #f048c6, #6dd5ed);
+
+h1 {
+  font-size: 72px;
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+.portflio li::before {
+  content: "• ";
+  color: black;
+}
+
+#connect li::before {
+  content: "• ";
+  color: white;
+}
+
+#firstrow {
+  background: silver;
+}
