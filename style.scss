@@ -1,4 +1,8 @@
 $size: 40px;
+$col-black: (black);
+$orange: #ffa600;
+$blue: #82d2e5;
+$green: #c1d72e;
 
 #image {
   width: 100px;
@@ -18,20 +22,17 @@ $font-family-monospace: sfmono-regular, menlo, monaco, consolas,
 
 body {
   font-family: $font-family-sans-serif;
-  background: silver;
+  background: $col-black;
 }
-$color: (black);
-$orange: #ffa600;
-$blue: #82d2e5;
-$green: #c1d72e;
 
 header {
+  background: $col-black;
+}
+
+.hopage {
   background: $color;
 }
 
-.homepage {
-  background: $color;
-}
 $gradient: -webkit-linear-gradient(#f6ea41, #f048c6, #6dd5ed);
 
 h1 {

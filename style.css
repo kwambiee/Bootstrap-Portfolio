@@ -10,8 +10,10 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background: silver;
+  font-family: system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue",
+    arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background: black;
 }
 
 header {
